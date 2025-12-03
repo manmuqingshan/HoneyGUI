@@ -8,7 +8,7 @@ cwd = GetCurrentDir()
 inc = [cwd]
 src = Glob('*.c')
 
-objs = DefineGroup('misc', src, depend = [''], CPPPATH = inc)
+objs = DefineGroup('rtk_gui', src, depend = [''], CPPPATH = inc)
 list = os.listdir(cwd)
 for d in list:
     path = os.path.join(cwd, d)
